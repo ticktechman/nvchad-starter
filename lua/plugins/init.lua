@@ -6,6 +6,16 @@ return {
       require "configs.conform"
     end,
   },
+  {
+    "majutsushi/tagbar",
+    lazy = false,
+    config = function()
+      vim.g.tagbar_sort = 0
+    end,
+  },
+  { "godlygeek/tabular", lazy = false },
+  { "ntpeters/vim-better-whitespace", lazy = false },
+  { "vim-scripts/a.vim", lazy = false },
 
   -- These are some examples, uncomment them if you want to see them work!
   -- {
