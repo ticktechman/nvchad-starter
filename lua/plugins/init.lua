@@ -7,6 +7,13 @@ return {
     end,
   },
   {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require("nvchad.configs.lspconfig").defaults()
+      require "configs.lspconfig"
+    end,
+  },
+  {
     "majutsushi/tagbar",
     lazy = false,
     config = function()
