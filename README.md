@@ -1,3 +1,5 @@
+# new starter
+
 Working with nvchad v2.5
 
 - change default color scheme
