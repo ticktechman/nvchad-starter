@@ -1,9 +1,18 @@
-**This repo is supposed to used as config by NvChad users!**
+# new starter
 
-- The main nvchad repo (NvChad/NvChad) is used as a plugin by this repo.
-- So you just import its modules , like `require "nvchad.options" , require "nvchad.mappings"`
-- So you can delete the .git from this repo ( when you clone it locally ) or fork it :)
+Working with nvchad v2.5
 
-# Credits
+- change default color scheme
+- change leader to ,
+- add my own snippets
+- add my own plugins
+- auto format after write
 
-1) Lazyvim starter https://github.com/LazyVim/starter as nvchad's starter was inspired by Lazyvim's . It made a lot of things easier!
+# c/c++ env
+
+- clangd & clang-format for LSP and formatting
+- bear for compile_commands.json
+- Snippets
+
+
+
