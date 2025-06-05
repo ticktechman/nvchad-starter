@@ -14,5 +14,8 @@ Working with nvchad v2.5
 - bear for compile_commands.json
 - Snippets
 
+# golang env
 
+- gopls for LSP
+- gofumpt for formatter
 
