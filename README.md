@@ -8,6 +8,12 @@ Working with nvchad v2.5
 - add my own plugins
 - auto format after write
 
+# enable new LSP
+
+```
+vim ./lua/configs/lspconfig.lua
+```
+
 # c/c++ env
 
 - clangd & clang-format for LSP and formatting
@@ -19,3 +25,8 @@ Working with nvchad v2.5
 - gopls for LSP
 - gofumpt for formatter
 
+# shell
+
+- bashls for LSP
+- shellcheck  for linter
+- shfmt for formatter
