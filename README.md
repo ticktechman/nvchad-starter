@@ -38,3 +38,10 @@ vim ./lua/configs/lspconfig.lua
 - pyright for LSP
 - black for linter
 - ruff for formatter
+
+# javascript, typescript, json
+
+- typescript-language-server for LSP
+- eslint_d for linter
+- prettierd for fomatter
+
