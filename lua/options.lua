@@ -4,7 +4,6 @@ require "nvchad.options"
 local opt = vim.opt
 local g = vim.g
 local cmd = vim.cmd
-local autocmd = vim.api.nvim_create_autocmd
 
 --------------------
 -- base options
@@ -34,17 +33,6 @@ cmd [[
     endif
   endfunction
 ]]
-
--- autocmd("FileType", {
---   pattern = { "c", "cpp", "lua", "sh", "go" },
---   callback = function()
---     autocmd("BufWritePre", {
---       callback = function()
---         vim.lsp.buf.format()
---       end,
---     })
---   end,
--- })
 
 -- local o = vim.o
 -- o.cursorlineopt ='both' -- to enable cursorline!
