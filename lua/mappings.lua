@@ -28,7 +28,7 @@ map("n", "<leader>e", ":NvimTreeToggle<CR>")
 map("n", "<leader>t", ":TagbarToggle<CR>")
 map("n", "<leader>,", ":call QuickFixToggle()<CR>")
 
-map({ "n", "t" }, "<C-i>", function()
+map({ "n" }, "<C-i>", function()
   require("nvchad.term").toggle {
     pos = "float",
     id = "floatTerm",
