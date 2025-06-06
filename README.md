@@ -16,6 +16,14 @@ Working with nvchad v2.5
 vim ./lua/configs/lspconfig.lua
 ```
 
+# tips for adding new language toolkit
+
+- formatter: lua/configs/conform.lua
+- lsp: lua/configs/lspconfig.lua
+- snippets:
+    - registry: lua/snippets/package.json
+    - snippets: lua/snippets/your-lang.json
+
 # c/c++ env
 
 - clangd & clang-format for LSP and formatting
