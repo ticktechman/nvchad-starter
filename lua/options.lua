@@ -19,13 +19,13 @@ opt.whichwrap = "<,>"
 
 g.mapleader = ","
 
-g.vscode_snippets_path = vim.fn.stdpath("config") .. "/lua/snippets"
+g.vscode_snippets_path = vim.fn.stdpath "config" .. "/lua/snippets"
 
 -- goto last postion
-cmd([[au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif]])
+cmd [[au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif]]
 
 -- toggle quickfix window borrowed from lvim
-cmd([[
+cmd [[
   function! QuickFixToggle()
     if empty(filter(getwininfo(), 'v:val.quickfix'))
       copen
@@ -33,17 +33,18 @@ cmd([[
       cclose
     endif
   endfunction
-]])
+]]
 
-autocmd("FileType", {
-  pattern = { "c", "cpp", "lua", "sh", "go" },
-  callback = function()
-    autocmd("BufWritePre", {
-      callback = function()
-        vim.lsp.buf.format()
-      end,
-    })
-  end,
-})
+-- autocmd("FileType", {
+--   pattern = { "c", "cpp", "lua", "sh", "go" },
+--   callback = function()
+--     autocmd("BufWritePre", {
+--       callback = function()
+--         vim.lsp.buf.format()
+--       end,
+--     })
+--   end,
+-- })
+
 -- local o = vim.o
 -- o.cursorlineopt ='both' -- to enable cursorline!

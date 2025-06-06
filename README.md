@@ -10,7 +10,9 @@ Working with nvchad v2.5
 
 # enable new LSP
 
-```
+``` bash
+## change server variable in lspconfig.lua
+##     local servers = { "html", "cssls", "clangd", "bashls", "gopls" }
 vim ./lua/configs/lspconfig.lua
 ```
 
@@ -30,3 +32,9 @@ vim ./lua/configs/lspconfig.lua
 - bashls for LSP
 - shellcheck  for linter
 - shfmt for formatter
+
+# python
+
+- pyright for LSP
+- black for linter
+- ruff for formatter
