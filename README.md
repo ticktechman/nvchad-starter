@@ -16,6 +16,11 @@ Working with nvchad v2.5
 vim ./lua/configs/lspconfig.lua
 ```
 
+# debug tips
+
+- list all plugins in runtime: scriptnames
+- no plugins startup: nvim --noplugin --clean xxx
+
 # tips for adding new language toolkit
 
 - formatter: lua/configs/conform.lua
@@ -68,3 +73,4 @@ vim.api.nvim_create_autocmd("VimEnter", {
   end,
 })
 ```
+
