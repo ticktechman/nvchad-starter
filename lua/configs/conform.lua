@@ -1,4 +1,9 @@
 local options = {
+  -- for all formatters, run the following command:
+  -- ls $HOME/.local/share/nvim/lazy/conform.nvim/lua/conform/formatters
+  --
+  -- for all filetypes:
+  -- ls /opt/homebrew/Cellar/neovim/0.11.0/share/nvim/runtime/ftplugin/
   formatters_by_ft = {
     lua = { "stylua" },
     python = { "ruff_format" },
