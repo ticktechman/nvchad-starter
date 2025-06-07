@@ -7,7 +7,9 @@
 --
 -------------------------------------------------------------------------------
 
-vim.api.nvim_create_autocmd("VimEnter", {
+require "nvchad.autocmds"
+local autocmd = vim.api.nvim_create_autocmd
+autocmd("VimEnter", {
   callback = function()
     local arg = vim.fn.argv()
     if #arg > 0 and vim.fn.isdirectory(arg[1]) == 1 then
@@ -17,7 +19,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
   end,
 })
 
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+autocmd({ "BufNewFile", "BufRead" }, {
   pattern = "*",
   callback = function()
     local first_line = vim.fn.getline(1)
@@ -29,7 +31,7 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
   end,
 })
 
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+autocmd({ "BufNewFile", "BufRead" }, {
   pattern = { "zshrc", ".zshrc" },
   callback = function()
     vim.bo.filetype = "sh"
