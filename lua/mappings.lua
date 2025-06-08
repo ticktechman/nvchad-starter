@@ -13,6 +13,10 @@ map("i", "jk", "<ESC>")
 -- added for ticktechman
 map("n", "<leader>z", ":q!<CR>")
 
+-- copy to system board
+map("n", "y", '"+y')
+map("v", "y", '"+y')
+
 -- tabufline
 map("n", "L", function()
   require("nvchad.tabufline").next()

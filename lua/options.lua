@@ -15,6 +15,7 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.ignorecase = true
 opt.whichwrap = "<,>"
+opt.clipboard = "" -- reset clipboard
 
 g.mapleader = ","
 
