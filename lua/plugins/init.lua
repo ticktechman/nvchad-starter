@@ -24,7 +24,7 @@ return {
   { "godlygeek/tabular", lazy = false },
   { "ntpeters/vim-better-whitespace", lazy = false },
   { "vim-scripts/a.vim", lazy = false },
-  { "editorconfig/editorconfig-vim", event = "BufReadPre" },
+  { "gpanders/editorconfig.nvim", lazy = false },
   -- test new blink
   -- { import = "nvchad.blink.lazyspec" },
 
