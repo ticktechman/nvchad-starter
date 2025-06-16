@@ -16,6 +16,7 @@ opt.expandtab = true
 opt.ignorecase = true
 opt.whichwrap = "<,>"
 opt.clipboard = "" -- reset clipboard
+opt.cursorlineopt = "both"
 
 g.mapleader = ","
 
